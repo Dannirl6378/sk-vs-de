@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+}
+
+.list-section {
+  margin-top: 20px;
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.MuiListItem-root {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MuiButton-contained {
+  background-color: #6200ea;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MuiButton-outlined {
+  border-color: #6200ea;
+  color: #6200ea;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiButton-outlined:hover {
+  background-color: #6200ea;
+  color: white;
+}
+
+.MuiButton-contained:hover {
+  background-color: #3700b3;
 }
